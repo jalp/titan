@@ -1,0 +1,15 @@
+titan:
+  build: titan
+  links:
+    - "cassandra:cassandra"
+    - "elastic:elasticsearch"
+  ports:
+    - "8182:8182"
+
+cassandra:
+  build: cassandra
+
+elastic:
+  build: elastic
+  ports:
+    - "9200:9200"
